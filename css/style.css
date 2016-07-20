@@ -1,0 +1,16 @@
+.rig{
+	position: relative;
+}
+.bb{
+	display: none;
+	position: absolute;
+	left: 0;
+}
+/*.aa:hover + .bb{
+	display: block;
+}
+
+
+.bb:hover  {
+	display: block;
+}*/
