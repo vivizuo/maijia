@@ -6,20 +6,15 @@
 	position: absolute;
 	left: 0;
 }
-/*.aa:hover + .bb{
-	display: block;
-}
-
-.bb:hover  {
-	display: block;
-}*/
-.maijia_nav .logo{
+.maijia_nav .nav-wapper .logo{
 	padding-left:50px;
 	margin: 8px 0 8px 0;
 	line-height: 1.5;
+	/*inline使得div换行功能；display：block则是默认的，块区域，是换行的；*/
+	display: inline-block;
 }
 .maijia_nav{
-    margin: 0 0 500px;
+    margin: 0 0 10px;
 }
 .right-head{
 	border: 0;
