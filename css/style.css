@@ -1,47 +1,59 @@
-.rig{
-	position: relative;
+.rig {
+    position: relative;
 }
-.bb{
-	display: none;
-	position: absolute;
-	left: 0;
+
+.bb {
+    display: none;
+    position: absolute;
+    left: 0;
 }
-.maijia_nav .nav-wapper .logo{
-	padding-left:50px;
-	margin: 8px 0 8px 0;
-	line-height: 1.5;
-	/*inline使得div换行功能；display：block则是默认的，块区域，是换行的；*/
-	display: inline-block;
+
+.maijia_nav .nav-wapper .logo {
+    padding-left: 50px;
+    margin: 8px 0 8px 0;
+    line-height: 1.5;
+    /*inline使得div换行功能；display：block则是默认的，块区域，是换行的；*/
+    display: inline-block;
 }
-.maijia_nav{
+
+.maijia_nav {
     margin: 0 0 10px;
 }
-.right-head{
-	border: 0;
-	background: transparent url(http://cdn.maijia.com/www/www-seo/components/maijia-tool/src/header_bd1ede1.png) no-repeat top right;
-	top: 450px;
-	height: 49px;
-	width: 100%;
-	position: absolute;
-	z-index: 2;
+
+.nav-item {
+    height: 65px;
+    float: left;
+    padding: 0 15px;
 }
-.cust-ser{
-	padding-top: 15px;
-	/*float:right;*/
-	position: fixed;
-	right:0;
-	color: #fff;
-	position: absolute;
-	background: #cc4a4c ;
-	font-size: 13px;
-	/*text-align: center;*/
-	top: 497px;
-	height: 100px;
-	/*z-index: 1;*/
-	width: 38px;
+
+.right-head {
+    border: 0;
+    background: transparent url(http://cdn.maijia.com/www/www-seo/components/maijia-tool/src/header_bd1ede1.png) no-repeat top right;
+    top: 450px;
+    height: 49px;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
 }
-.cust-ser .qq{
-	top: 547px;
-	height: 36px;
-	width: 38px;
+
+.cust-ser {
+    padding-top: 15px;
+    /*float:right;*/
+    position: fixed;
+    right: 0;
+    color: #fff;
+    position: absolute;
+    background: #cc4a4c;
+    font-size: 13px;
+    /*text-align: center;*/
+    top: 497px;
+    height: 100px;
+    /*z-index: 1;*/
+    width: 38px;
+}
+
+.cust-ser .qq {
+    top: 547px;
+    height: 36px;
+    width: 38px;
 }
