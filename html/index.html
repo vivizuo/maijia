@@ -3,56 +3,100 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../js/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-<div class="memu" style="padding-left:50px;font-size:12px">
-	
+<!--style样式; text-decoration: none;表示：鼠标放上去后，连接的下划线不显示 -->
+<div class="menu" style="padding-left:50px;font-size:12px">
+    <div id="menu-wrapper" style="margin: 0 auto;width: 1180px;">
 	<span class="hello">
 		您好，欢迎来到
-		<a href="http://www.maijia.com" style="color: #ff8939; text-decoration: none;">
+		<a href="http://www.maijia.com" style="color: #ff8939">
 		卖家网
 		</a>
 		!
 	</span>
 	<span class="j_user" style="margin-left: 15px">
 		<a href="http://login.maijia.com/" style="color: #ff8939">登录</a>	
-		<a href="http://login.maijia.com/" style="color: #666">免费注册</a>	
+		<a href="http://login.maijia.com/" style="color: #666;margin-left: 15px">免费注册</a>
 	</span>
-    <div style="float:right; margin-right:200px;">
+        <!--右侧顶部菜单-->
+        <div style="float:right; margin-right:200px;width: auto">
 
-        <div class="rig">
-            <span class="aa">消息</span>
-            <!-- x下拉框的模块bb -->
-            <div class="bb">
-                <a>hhhhhhhcv</a>
-                <a>hhhhhhhcv</a>
-                <!-- <ul>
-                    <li>hhhhhhhcv</li>
-                    <li>hhhhhhhcv</li>
-                </ul> -->
+            <div class="message" style="display: block;float: left">
+            <span class="aa">消息
+                <span class="glyphicon glyphicon-chevron-down" style="color: orange"></span>
+            </span>
+                <!-- x下拉框的模块bb -->
+                <div class="bb">
+                    <a href="http://i.maijia.com/index.html">站内消息</a>
+                    <a href="http://i.maijia.com/index.html#/user/message/?msgType=0&from=top">系统消息</a>
+                </div>
+            </div>
+            <div class="p_center" style="display: block;float: left;margin: 0 20px">个人中心
+                <span class="glyphicon glyphicon-chevron-down" style="color: orange"></span>
+            </div>
+            <div class="site_map" style="display: block;float: left">
+                <span class="glyphicon glyphicon-menu-hamburger" style="color: orange"></span>
+                网站导航
+                <span class="glyphicon glyphicon-chevron-down" style="color: orange"></span>
             </div>
         </div>
-
     </div>
-
-
 </div>
 
+<div class="maijia_nav" style="background-color: #d7be3e;">
+    <h1 class="logo">
+        <a href="http://www.maijia.com">
+            <img src="http://cdn.maijia.com/www/www-seo/pagelet/header/imgs/logo2_d2837e8.png" alt="卖家网">
+        </a>
+    </h1>
+</div>
+<!--广告banner-->
+<div class="banner-wapper " style="width: 1180px;margin-left: 50px;margin-top: 100px">
+    <span class="banner">
+        <a href="http://xueyuan.maijia.com/mlive/117?hmsr=%E9%A6%96%E9%A1%B5%E5%A4%A7banner">
+             <img src="http://img.maijia.com/www/main/201607/18100031aqbc.jpg" alt="卖家学院-直通车专场">
+        </a>
+    </span>
+</div>
+
+<!--&lt;!&ndash;右侧定位，一键置顶&ndash;&gt;-->
+<!--<div class="right-head"></div>-->
+<!--<div class="cust-ser">在线客服-->
+        <!--<span class="glyphicon glyphicon-phone-alt" style="color: orange"></span>-->
+        <!--&lt;!&ndash;alert('jjjj');&ndash;&gt;-->
+<!--</div>-->
+
+
 </body>
-<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+<script src="../js/lib/bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(function () {
         // alert('jjjjjjjjjjjjjjjjjjjjjj');
-        $(".rig").hover(
+        //hover可以传2个参数,鼠标in和out
+//        $(".rig").hover(
+//                function () {
+//                    $('.rig').show();
+//                }, function () {
+//                    setTimeout(function () {
+//                        $('.rig').hide();
+//                    }, 1000);
+//                }
+//        );
+        $('.aa').hover(
                 function () {
-                    $('.rig').show();
+                    $('.bb').show();
                 }, function () {
-                    setTimeout(function () {
-                        $('.rig').hide();
-                    }, 1000);
+                    $('.bb').hide();
                 }
         );
+
     });
 </script>
 </html>

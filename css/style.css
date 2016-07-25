@@ -10,7 +10,43 @@
 	display: block;
 }
 
-
 .bb:hover  {
 	display: block;
 }*/
+.maijia_nav .logo{
+	padding-left:50px;
+	margin: 8px 0 8px 0;
+	line-height: 1.5;
+}
+.maijia_nav{
+    margin: 0 0 500px;
+}
+.right-head{
+	border: 0;
+	background: transparent url(http://cdn.maijia.com/www/www-seo/components/maijia-tool/src/header_bd1ede1.png) no-repeat top right;
+	top: 450px;
+	height: 49px;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+}
+.cust-ser{
+	padding-top: 15px;
+	/*float:right;*/
+	position: fixed;
+	right:0;
+	color: #fff;
+	position: absolute;
+	background: #cc4a4c ;
+	font-size: 13px;
+	/*text-align: center;*/
+	top: 497px;
+	height: 100px;
+	/*z-index: 1;*/
+	width: 38px;
+}
+.cust-ser .qq{
+	top: 547px;
+	height: 36px;
+	width: 38px;
+}
