@@ -1,3 +1,9 @@
+body{
+    background: rgb(251, 251, 251);
+}
+
+
+
 .rig {
     position: relative;
 }
@@ -24,6 +30,12 @@
     height: 65px;
     float: left;
     padding: 0 15px;
+    font-size: 16px;
+    color: #fff;
+}
+.nav-item:hover{
+    background-color: #e77122;
+
 }
 
 .right-head {
@@ -40,7 +52,7 @@
     height: 255px;
     margin-right: 100px;
     /*padding-top: 55px;*/
-    margin-top: 115px;
+    margin-top: 55px;
     float: right;
 }
 .input-login{
@@ -70,7 +82,8 @@
     width: 200px;
     height: 652px;
     font-family: 微软雅黑;
-    background-color: #f9f2f4;
+    /*background-color: #f9f2f4;*/
+    background-color: #fff;
     margin-left: 50px;
     margin-top: 20px;
     position: absolute;
@@ -113,7 +126,8 @@
     margin-right: 18px;
     margin-left: 280px;
     margin-top: 20px;
-    background-color: #dff0d8;
+    /*background-color: #DFF0F1;*/
+    background-color: #fff;
     position: absolute;
     display: inline;
 }
@@ -122,8 +136,8 @@
     height: 680px;
     margin-top: 20px;
     margin-left: 950px;
-    background-color: #f9f2f4;
-
+    /*background-color: #f9f2f4;*/
+    background-color: #fff;
 }
 .block-css{
     width: 600px;
@@ -171,6 +185,13 @@
     margin-top: 30px;
     color: rgba(255,255,255,.84);
     font-size: 18px;
+}
+.a-css{
+    line-height: 65px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 微软雅黑;
 }
 .cust-ser {
     padding-top: 15px;
