@@ -1,6 +1,10 @@
 body{
     background: rgb(251, 251, 251);
 }
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
 
 
 
@@ -35,7 +39,6 @@ body{
 }
 .nav-item:hover{
     background-color: #e77122;
-
 }
 
 .right-head {
