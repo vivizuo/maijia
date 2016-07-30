@@ -1,8 +1,10 @@
 body{
     background: rgb(251, 251, 251);
 }
+/*监听鼠标过来的发生的事件*/
 a:hover{
     color: #fff;
+    /*去除a标签下划线*/
     text-decoration: none;
 }
 
