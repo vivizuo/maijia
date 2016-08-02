@@ -5,6 +5,7 @@
     <title>example for chart</title>
     <!-- 引入 ECharts 文件 -->
     <script src="../js/echarts.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
 </head>
 <body>
 <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -20,10 +21,10 @@
         },
         tooltip: {},
         legend: {
-            data:['销量']
+            data: ['销量']
         },
         xAxis: {
-            data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"]
         },
         yAxis: {},
         series: [{
@@ -38,8 +39,35 @@
 </script>
 
 
-</body>
 
+
+
+<div class="order" style="width: 650px;height: 260px">
+    <span style="width: 5px;height: 25px;background-color: #3BAC8A;display: block;float: left;"></span>
+    <div style="margin-left: 15px;width: 70px;height: 25px;line-height: 25px;font-family: 微软雅黑;font-size: 16px">订单信</div>
+
+    <div style="width: 650px;height: 1px;background-color: #f2f2f2;margin-top: 10px;"></div>
+
+    <div style="margin: 30px 20px 20px 40px;">
+        <div class="wrapper">
+            <span class="goods-detail">商品详情：</span>
+            <span class="ff">卖家学院套餐版套餐 </span>
+        </div>
+        <div class="wrapper">
+            <span class="goods-detail">套餐类型：</span>
+            <span class="ff">3000元数据+学院套餐 </span>
+        </div>
+        <div class="wrapper">
+            <span class="goods-detail" >价格：</span>
+            <span class="ff">￥334444 </span>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
 
 
 </html>

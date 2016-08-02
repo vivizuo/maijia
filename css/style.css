@@ -218,3 +218,14 @@ a:hover{
     height: 36px;
     width: 38px;
 }
+.cou-a{
+    display: inline-block;
+    background: #f5f5f5;
+    color: #666;
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    border: #ccc 1px dashed;
+    line-height: 30px;
+    padding-left: 13px;
+}
