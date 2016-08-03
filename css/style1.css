@@ -19,10 +19,15 @@
     letter-spacing: 1em;
 }
 .order{
-    width: 600px;height: 260px;
+    /*width: 600px;*/
+    width: 47%;
+    height: 260px;
 }
 .order1{
-    display: inline-block;margin-left: 100px;width: 600px;height: 260px;
+    display: inline-block;margin-left: 100px;
+    /*width: 600px;*/
+    width: 42%;
+    height: 260px;
 }
 .ff{
     font-size: 14px;

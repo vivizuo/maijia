@@ -7,18 +7,18 @@
 </head>
 <body>
 <!--卖家学院logo-->
-    <div class="mjxy-logo">
-        <a href="http://xueyuan.maijia.com/" target="_blank">
-         <img src="//cdn.maijia.com/xueyuan/widget/header/logo_d083811.png" alt="卖家学院" title="卖家学院">
-        </a>
-    </div>
+<div class="mjxy-logo">
+    <a href="http://xueyuan.maijia.com/" target="_blank">
+        <img src="//cdn.maijia.com/xueyuan/widget/header/logo_d083811.png" alt="卖家学院" title="卖家学院">
+    </a>
+</div>
 
 
 <div class="heade-css">
     <div class="order1">
         <span class="green-block"></span>
         <div class="messages">订单信息</div>
-    <!--灰色下划线-->
+        <!--灰色下划线-->
         <div class="wire-css"></div>
 
         <div class="block-wap">
@@ -38,11 +38,11 @@
 
         </div>
         <div class="wrapper1" style="margin-top: 50px;">
-            <span class="goods-pay" >实付金额：</span>
+            <span class="goods-pay">实付金额：</span>
             <span class="ff1">￥334444元 </span>
         </div>
     </div>
-<!--右側信息-->
+    <!--右側信息-->
     <div class="order" style="float: right;">
         <span class="green-block"></span>
         <div class="messages">支付宝扫码支付</div>
@@ -52,7 +52,7 @@
         <!--右侧二维码模块-->
         <div class="qrcode-wrapper">
             <div class="qrcode">
-
+                <div id="qrcode" style="margin: 7px;"></div>
             </div>
             <!--二维码右边的提示和价格-->
             <div class="tip">
@@ -70,18 +70,49 @@
     </div>
 
 </div>
+<script type="text/javascript" src="../js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="../js/qrcode.js"></script>
+<script>
+    var userNick = 'zuowei';
+    var qrcodeStr;
+    //异步 javascript and xml
+    $.ajax({
+        type: "get",
+        dataType: "json",
+        //url 是指 我请求数据所在地址,我需求请求数据所在的地址
+        url: "diagnosis-rpt/rptNatureFlow/status",
+        //
+        data: {
+            userNick: userNick
+        },
+        //当成功调用后,调用以下这个函数,其中参数名随便取
+        success: function (result) {
+            /**
+             * {
+             * success: true,
+             * 其中qrcode是需要问后台人员,确认返回的是什么字段
+             * qrcode: password123
+             * time: 2016-07-11
+             * }
+             */
+            console.log(result);
+            qrcodeStr = result.qrcode;
+            var qrcode = new QRCode("qrcode", {
+                text: qrcodeStr,
+                width: 175,
+                height: 175,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.H
+            });
+        },
+        error: function () {
+            var errorMsg=document.getElementById("qrcode");
+            errorMsg.innerHTML="嗷~~请刷新重试-。-";
+        }
+    });
+
+</script>
 
 </body>
-<!--<script type="text/javascript" src="../js/qrcode.js">-->
-<!--//    new QRCode(Document.getElementById("qrcode"),"http://jindo.dev.naver.com/collie");-->
-<!--//var qrcode = new QRCode("test", {-->
-<!--//    text: "http://jindo.dev.naver.com/collie",-->
-<!--//    width: 128,-->
-<!--//    height: 128,-->
-<!--//    colorDark : "#000000",-->
-<!--//    colorLight : "#ffffff",-->
-<!--//    correctLevel : QRCode.CorrectLevel.H-->
-<!--//});-->
-<!--</script>-->
-
 </html>
