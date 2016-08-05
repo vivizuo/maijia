@@ -20,7 +20,7 @@ a:hover{
     left: 0;
 }
 
-.maijia_nav .nav-wapper .logo {
+.maijia_nav .logo {
     padding-left: 50px;
     margin: 8px 0 8px 0;
     line-height: 1.5;
@@ -30,6 +30,7 @@ a:hover{
 
 .maijia_nav {
     margin: 0 0 10px;
+    background-color: #ff8939;margin-top: 10px;
 }
 
 .nav-item {
@@ -55,9 +56,9 @@ a:hover{
 .login{
     width: 280px;
     height: 255px;
-    margin-right: 100px;
+    margin-right: 150px;
     /*padding-top: 55px;*/
-    margin-top: 55px;
+    margin-top: 25px;
     float: right;
 }
 .input-login{
@@ -81,7 +82,7 @@ a:hover{
     height: 40px;
     background-color: #f1f1f1;
     width: 280px;
-    margin-bottom: 0px;
+    position: relative;bottom: -20px;text-indent: 20px;line-height: 38px;
 }
 .left-display{
     width: 200px;
@@ -228,4 +229,8 @@ a:hover{
     border: #ccc 1px dashed;
     line-height: 30px;
     padding-left: 13px;
+}
+.swiper-container {
+    width: 600px;
+    height: 300px;
 }

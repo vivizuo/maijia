@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="/css/swiper.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -49,8 +49,7 @@
     </div>
 </div>
 <!--卖家网导航-->
-<div class="maijia_nav" style="background-color: #ff8939;margin-top: 10px">
-    <div class="nav-wapper" style="height: 65px;margin: 0 auto;">
+<div class="maijia_nav" style="background-color: #ff8939;margin-top: 10px;height: 65px;width: 100%;">
         <div class="logo" style="height: 65px;width: 205px;float: left;">
             <a href="http://www.maijia.com">
                 <img style="margin-top: 10px"
@@ -81,61 +80,64 @@
         <div class="nav-item">
             <a class="a-css" href="http://km.maijia.com/" target="_blank">快麦</a>
         </div>
-<!--登录框-->
-        <div class="login" style="background-color: #bce8f1">
-            <div class="hi-item" style="font-size: 12px;padding: 10px 20px 5px 20px;">
-                Hi～亲，您还未登录～
-            </div>
-            <div class="input-login">
-                <input class="inpu" placeholder="亲,手机号呢~" type="text" name="loginCode"
-                       style="width: 218px;height: 28px;padding: 0">
-            </div>
-            <div class="input-login" style="margin-top: 10px;">
-                <input class="inpu" placeholder="小心输入您的密码~" type="text" name="loginPassword"
-                       style="width: 218px;height: 28px;padding: 0">
-            </div>
-            <div>
-                <button class="btn-login" style="color: #ffffff">
-                    <span class="glyphicon glyphicon-user" style="color: #ffffff"></span>
-                    登录
-                </button>
-            </div>
-           <!--免费注册和忘记密码        -->
-            <div class="clearfix" style="margin-left: 29px;margin-top: 10px">
-                <a href="/register.htm?redirectURL=http%3A%2F%2Fwww.maijia.com%2F" target="_blank">
-                    <span class="reg" style="float: left;color: #ff8939;font-size: 12px">免费注册</span>
-                </a>
-                <a href="http://i.maijia.com/index.html#/user/find_password/?redirectURL=http%3A%2F%2Fwww.maijia.com%2F"
-                   target="_blank">
-                    <span class="find-pwd" style="float: right;color: #999;font-size: 12px;margin-right: 29px">忘记密码</span>
-                </a>
-            </div>
-            <div class="third-party" style="position: relative;bottom: -20px;text-indent: 20px;line-height: 38px;">
-                其他登录方式：
-                <a href="/oauth/auth/qzone?redirectURL=http%3A%2F%2Fwww.maijia.com%2F">
-                    <span class="qq">
-                        <img src="images/1.jpg">
-                        QQ账号</span>
-                </a>
-                <a href="/oauth/auth/sina?redirectURL=http%3A%2F%2Fwww.maijia.com%2F">
-                    <span class="sina">
-                        <img src="images/2.jpg">
-                        新浪微博</span>
-                </a>
-            </div>
-
-        </div>
-    </div>
-
 </div>
+
 <!--广告banner-->
-<div class="banner-wapper " style="width: 1180px;margin-left: 50px;margin-top: 30px">
-    <span class="banner">
-        <a href="http://xueyuan.maijia.com/mlive/117?hmsr=%E9%A6%96%E9%A1%B5%E5%A4%A7banner">
-            <img src="http://img.maijia.com/www/main/201607/18100031aqbc.jpg" alt="卖家学院-直通车专场">
-        </a>
-    </span>
+<div class="banner-wapper " style="width: 100%;margin-left: 50px;margin-top: 30px;height: 300px;">
+            <div class="banner" style="width: 68%;display: inline-block;">
+                <a href="http://xueyuan.maijia.com/mlive/117?hmsr=%E9%A6%96%E9%A1%B5%E5%A4%A7banner">
+                    <img src="http://img.maijia.com/www/main/201607/18100031aqbc.jpg" alt="卖家学院-直通车专场">
+                </a>
+            </div>
+
+            <!--登录框-->
+            <div class="login" style="background-color: #bce8f1">
+                <div class="hi-item" style="font-size: 12px;padding: 10px 20px 5px 20px;">
+                    Hi～亲，您还未登录～
+                </div>
+                <div class="input-login">
+                    <input class="inpu" placeholder="亲,手机号呢~" type="text" name="loginCode"
+                           style="width: 218px;height: 28px;padding: 0">
+                </div>
+                <div class="input-login" style="margin-top: 10px;">
+                    <input class="inpu" placeholder="小心输入您的密码~" type="text" name="loginPassword"
+                           style="width: 218px;height: 28px;padding: 0">
+                </div>
+                <div>
+                    <button class="btn-login" style="color: #ffffff">
+                        <span class="glyphicon glyphicon-user" style="color: #ffffff"></span>
+                        登录
+                    </button>
+                </div>
+                <!--免费注册和忘记密码        -->
+                <div class="clearfix" style="margin-left: 29px;margin-top: 10px">
+                    <a href="/register.htm?redirectURL=http%3A%2F%2Fwww.maijia.com%2F" target="_blank">
+                        <span class="reg" style="float: left;color: #ff8939;font-size: 12px">免费注册</span>
+                    </a>
+                    <a href="http://i.maijia.com/index.html#/user/find_password/?redirectURL=http%3A%2F%2Fwww.maijia.com%2F"
+                       target="_blank">
+                        <span class="find-pwd" style="float: right;color: #999;font-size: 12px;margin-right: 29px">忘记密码</span>
+                    </a>
+                </div>
+                <div class="third-party">
+                    其他登录方式：
+                    <a href="/oauth/auth/qzone?redirectURL=http%3A%2F%2Fwww.maijia.com%2F">
+                            <span class="qq">
+                                <img src="images/1.jpg">
+                                QQ账号</span>
+                    </a>
+                    <a href="/oauth/auth/sina?redirectURL=http%3A%2F%2Fwww.maijia.com%2F">
+                            <span class="sina">
+                                <img src="images/2.jpg">
+                                新浪微博</span>
+                    </a>
+                </div>
+
+            </div>
 </div>
+
+
+
 <!--广告以下部分，左侧-->
 <div class="left-display">
     <h3 style="font-size: 16px;height: 50px;line-height: 50px;text-indent: 20px;margin-bottom: 0;margin-top: 0;">
@@ -341,10 +343,33 @@
         </div>
     </div>
 
-
-
-
 </div>
+
+<!--图片轮播小试牛刀-->
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+
+
 
 
 
@@ -384,4 +409,20 @@
 
     });
 </script>
+<!--轮播图片的代码-->
+<script src="js/swiper.js"></script>
+<script src="js/swiper.jquery.js"></script>
+<script type="text/javascript" >
+
+    $(document).ready(function () {
+//initialize swiper when document ready
+        var mySwiper = new Swiper ('.swiper-container', {
+// Optional parameters
+            direction: 'vertical',
+            loop: true
+        })
+    });
+</script>
+
+
 </html>
