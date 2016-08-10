@@ -351,9 +351,15 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 1
+                <img src="images/7.jpg">
+            </div>
+            <div class="swiper-slide">Slide 2
+                <img src="images/8.jpg">
+            </div>
+            <div class="swiper-slide">Slide 3
+                <img src="images/9.jpg">
+            </div>
             ...
         </div>
         <!-- If we need pagination -->
@@ -414,14 +420,22 @@
 <script src="js/swiper.jquery.js"></script>
 <script type="text/javascript" >
 
-    $(document).ready(function () {
-//initialize swiper when document ready
-        var mySwiper = new Swiper ('.swiper-container', {
-// Optional parameters
-            direction: 'vertical',
-            loop: true
-        })
-    });
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: '.swiper-pagination',
+
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+
+        // And if we need scrollbar
+        scrollbar: '.swiper-scrollbar',
+    })
+
 </script>
 
 
