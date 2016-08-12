@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/swiper.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/css/style1.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
 </head>
 <body>
 <!--style样式; text-decoration: none;表示：鼠标放上去后，连接的下划线不显示 -->
@@ -88,6 +91,7 @@
                 <a href="http://xueyuan.maijia.com/mlive/117?hmsr=%E9%A6%96%E9%A1%B5%E5%A4%A7banner">
                     <img src="http://img.maijia.com/www/main/201607/18100031aqbc.jpg" alt="卖家学院-直通车专场">
                 </a>
+
             </div>
 
             <!--登录框-->
@@ -345,98 +349,95 @@
 
 </div>
 
-<!--图片轮播小试牛刀-->
-    <!-- Slider main container -->
-    <div class="swiper-container">
-        <!-- Additional required wrapper -->
+
+
+<div style="width: 800px;height: 600px;">
+    <div class="swiper-container gallery-top">
         <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1
-                <img src="images/7.jpg">
-            </div>
-            <div class="swiper-slide">Slide 2
-                <img src="images/8.jpg">
-            </div>
-            <div class="swiper-slide">Slide 3
-                <img src="images/9.jpg">
-            </div>
-            ...
+            <div class="swiper-slide" style="background-image:url(images/600x300.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/600x300.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/10.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/12.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/13.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/14.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/15.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
     </div>
-
-
-
-
-
-
-
-
-
-
+    <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(images/600x300.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/600x300.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/10.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/12.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/13.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/14.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/15.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(images/6.jpg)"></div>
+        </div>
+    </div>
+</div>
 <!--右侧定位，一键置顶-->
 <!--<div class="right-head"></div>-->
 <!--<div class="cust-ser">在线客服-->
     <!--<span class="glyphicon glyphicon-phone-alt" style="color: orange"></span>-->
 <!--</div>-->
-
-
-</body>
-<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-    $(function () {
-        // alert('jjjjjjjjjjjjjjjjjjjjjj');
-        //hover可以传2个参数,鼠标in和out
-//        $(".rig").hover(
-//                function () {
-//                    $('.rig').show();
-//                }, function () {
-//                    setTimeout(function () {
-//                        $('.rig').hide();
-//                    }, 1000);
-//                }
-//        );
-        $('.aa').hover(
-                function () {
-                    $('.bb').show();
-                }, function () {
-                    $('.bb').hide();
-                }
-        );
-
-    });
-</script>
 <!--轮播图片的代码-->
-<script src="js/swiper.js"></script>
-<script src="js/swiper.jquery.js"></script>
-<script type="text/javascript" >
+<!-- Swiper JS -->
+<script src="../lib/swiper/js/swiper.min.js"></script>
 
-    var mySwiper = new Swiper ('.swiper-container', {
-        // Optional parameters
-        direction: 'vertical',
-        loop: true,
-
-        // If we need pagination
-        pagination: '.swiper-pagination',
-
-        // Navigation arrows
+<!-- Initialize Swiper -->
+<script>
+    var galleryTop = new Swiper('.gallery-top', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-
-        // And if we need scrollbar
-        scrollbar: '.swiper-scrollbar',
-    })
+        spaceBetween: 10,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        touchRatio: 0.2,
+        slideToClickedSlide: true
+    });
+    galleryTop.params.control = galleryThumbs;
+    galleryThumbs.params.control = galleryTop;
 
 </script>
+
+</body>
+<!--<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>-->
+<!--<script src="lib/bootstrap/js/bootstrap.min.js"></script>-->
+<!--<script type="text/javascript">-->
+    <!--$(function () {-->
+        <!--// alert('jjjjjjjjjjjjjjjjjjjjjj');-->
+        <!--//hover可以传2个参数,鼠标in和out-->
+<!--//        $(".rig").hover(-->
+<!--//                function () {-->
+<!--//                    $('.rig').show();-->
+<!--//                }, function () {-->
+<!--//                    setTimeout(function () {-->
+<!--//                        $('.rig').hide();-->
+<!--//                    }, 1000);-->
+<!--//                }-->
+<!--//        );-->
+        <!--$('.aa').hover(-->
+                <!--function () {-->
+                    <!--$('.bb').show();-->
+                <!--}, function () {-->
+                    <!--$('.bb').hide();-->
+                <!--}-->
+        <!--);-->
+
+    <!--});-->
+<!--</script>-->
 
 
 </html>
